@@ -18,6 +18,7 @@ reading order, from foundations to capstone.*
 | [03-portfolio-ops-ca](https://github.com/Guilou001/03-portfolio-ops-ca) | Les briques d'un gestionnaire institutionnel (Black-Litterman, HRP, attribution de Brinson, bandes de politique), vérifiées contre leurs papiers, rapportent-elles quelque chose une fois branchées sur six FNB canadiens ? | Chaîne Idzorek (2005) exacte aux 2 décimales imprimées ; moteur 2007-2026 sur FNB de Toronto : la politique à bandes sans vue fait 6,63 % par an net, les vues systématiques 6,25 % ; rapport mensuel régénérable |
 | [04-memoire-uqam-2024](https://github.com/Guilou001/04-memoire-uqam-2024) | Mon mémoire (8 modèles d'apprentissage machine, macro LCDMA et FRED-MD, 50 titres TSX et 50 titres S&P 500, 2008-2024) se réexécute-t-il, et que valent ses portefeuilles long short une fois le short réellement soustrait ? | Réexécution exacte (écart 2,8 × 10⁻⁷) ; long short réel : au mieux 7,4 % par an aux États-Unis, 5,6 % au Canada, sous l'équipondéré ; v1.1 avec PDF des résultats refaits |
 | [05-memoire-2.0](https://github.com/Guilou001/05-memoire-2.0) | La même question, refaite avec les méthodes de 2026 : information réellement disponible, réglages gelés hors test, validation croisée purgée, coûts, Sharpe déflaté | Aucun des huit modèles ne bat l'équipondéré ; la rotation de 2 à 3 par mois coûte plus que le signal extrait ; Sharpe déflaté maximal 0,01 une fois les 33 essais comptés, loin du seuil de 0,95 |
+| [06-risk-engine-ca](https://github.com/Guilou001/06-risk-engine-ca) | Parmi six modèles de VaR à un jour (historique, gaussien, Student, EWMA, simulation historique filtrée, GARCH maison), lesquels survivent aux backtests réglementaires sur 22 ans de données canadiennes ? | Seule la simulation historique filtrée passe Kupiec (69 dépassements pour 54,8 attendus, p = 0,063) et n'a aucune année rouge de Bâle ; l'historique dépasse 22 fois dans la seule année 2008 |
 | [skill-redaction-pedagogique](https://github.com/Guilou001/skill-redaction-pedagogique) | Un skill Claude Code : écrire des documents techniques en français clair sans perdre la rigueur | Utilisé pour les README de tous les dépôts ci-dessus |
 
 ## Par où commencer, en trois arrêts
@@ -38,11 +39,12 @@ reading order, from foundations to capstone.*
 | Gestion de portefeuille institutionnelle (allocation, attribution, politique) | 03-portfolio-ops-ca, 01-efficient-frontier-mpt |
 | Apprentissage machine appliqué aux rendements | 04-memoire-uqam-2024, 05-memoire-2.0 |
 | Backtests propres (walk-forward, coûts, validation purgée) | 05-memoire-2.0, 03-portfolio-ops-ca, 02-estimation-error-lab, 01-efficient-frontier-mpt |
+| Gestion des risques (VaR, ES, backtests réglementaires) | 06-risk-engine-ca |
 | Rédaction technique bilingue, chiffres sourcés | tous, plus skill-redaction-pedagogique |
 
-En cours, dans l'ordre : `06-risk-engine-ca` (VaR et ES, backtests de Bâle), `07-nowcast-canada`,
-`08-factor-lab-ca`, `09-valuation-lab-ca` (analyse fondamentale et DCF d'une société du TSX),
-`10-credit-lab-ca`, `11-yield-curve-ca`, `12-plan-epargne-ca` (projection REER/CELI par simulation).
+En cours, dans l'ordre : `07-nowcast-canada`, `08-factor-lab-ca`, `09-valuation-lab-ca` (analyse
+fondamentale et DCF d'une société du TSX), `10-credit-lab-ca`, `11-yield-curve-ca`,
+`12-plan-epargne-ca` (projection REER/CELI par simulation).
 
 Outils : Python 3.12 (uv, pandas, scikit-learn, cvxpy, matplotlib), SQL, Excel, LaTeX et Typst.
 Données libres seulement : Yahoo Finance (usage personnel), FRED, Banque du Canada (Valet), Ken French,
