@@ -11,6 +11,53 @@ what survives out of sample, and document what does not. Every repository ships 
 downloads, tests, CI, and a report where each number carries its provenance. Repository numbers give the
 reading order, from foundations to capstone.*
 
+## Par métier
+
+Sept familles se partagent les vingt dépôts, une étiquette cliquable par dépôt, celle du poste qu'il vise.
+
+**[Gestion de portefeuille](https://github.com/topics/gestion-de-portefeuille)**
+
+- [01-frontiere-efficiente](https://github.com/Guilou001/01-frontiere-efficiente) : 50 000 portefeuilles tirés au hasard contre la frontière exacte, puis le portefeuille tangent testé hors échantillon contre 1/N.
+- [02-erreur-estimation](https://github.com/Guilou001/02-erreur-estimation) : les 312 cellules de DeMiguel, Garlappi et Uppal (2009) reproduites, puis le verdict retesté sur 63 ans.
+- [03-gestion-portefeuille](https://github.com/Guilou001/03-gestion-portefeuille) : de l'énoncé de politique de placement au rapport mensuel, chaque brique vérifiée contre son papier fondateur.
+- [12-plan-epargne](https://github.com/Guilou001/12-plan-epargne) : REER ou CELI d'abord, et ce que devient la promesse d'un plan quand on simule les rendements au lieu de les supposer constants.
+- [13-couverture-de-change](https://github.com/Guilou001/13-couverture-de-change) : couvrir le dollar américain augmente le risque, mesuré sur 249 mois, et le ratio de couverture optimal vaut zéro.
+- [14-attribution-performance](https://github.com/Guilou001/14-attribution-performance) : quatre méthodes de chaînage d'attribution réconciliées, et le verdict au comité qui ne dépend pas de la méthode.
+- [16-options-couvertes](https://github.com/Guilou001/16-options-couvertes) : le revenu des options d'achat couvertes n'est pas gratuit, il vaut 527 points de base par an de prime de risque.
+
+**[Finance quantitative](https://github.com/topics/finance-quantitative)**
+
+- [04-memoire-uqam-2024](https://github.com/Guilou001/04-memoire-uqam-2024) : mon mémoire réexécuté à l'identique, et ses portefeuilles long short une fois le short réellement soustrait.
+- [05-memoire-2.0](https://github.com/Guilou001/05-memoire-2.0) : le même mémoire refait sans fuite d'information ; aucun des huit modèles ne bat l'équipondéré.
+- [08-facteurs-canada](https://github.com/Guilou001/08-facteurs-canada) : les primes canadiennes n'ont pas fondu après publication, le momentum tenant 15,7 % par an.
+- [15-valorisation-options](https://github.com/Guilou001/15-valorisation-options) : construire un pricer d'options, puis prouver qu'il est juste, vingt prix sur vingt du tableau de Longstaff-Schwartz.
+- [uqam-transformer-actions](https://github.com/Guilou001/uqam-transformer-actions) : un Transformer à douze têtes qui ne prédit qu'une ligne plate sur les rendements quotidiens.
+
+**[Économie](https://github.com/topics/economie)**
+
+- [07-nowcast-pib-canada](https://github.com/Guilou001/07-nowcast-pib-canada) : avec l'information réellement disponible, le pont du PIB mensuel réduit l'erreur de 57 % contre l'autorégression au troisième mois.
+- [11-courbe-des-taux](https://github.com/Guilou001/11-courbe-des-taux) : la marche aléatoire bat Diebold-Li dans 26 cases sur 27, et la pente ne prédit plus les récessions hors échantillon.
+- [18-inflation-fondamentale](https://github.com/Guilou001/18-inflation-fondamentale) : l'IPC-tronq garde son premier rang à travers le choc de 2021-2023, l'IPC-comm finit dernier.
+- [uqam-cycle-economique-canada](https://github.com/Guilou001/uqam-cycle-economique-canada) : les faits stylisés du cycle canadien refaits cinq ans plus tard, et la grande modération qui ne tient plus jusqu'en 2026.
+
+**[Gestion des risques](https://github.com/topics/gestion-des-risques)**
+
+- [06-risque-marche](https://github.com/Guilou001/06-risque-marche) : sur six modèles de valeur à risque, seule la simulation historique filtrée passe Kupiec et n'a aucune année rouge de Bâle.
+
+**[Crédit](https://github.com/topics/credit)**
+
+- [10-credit-bancaire](https://github.com/Guilou001/10-credit-bancaire) : un moteur de probabilité de défaut prouvé sur un portefeuille à vérité connue, et le dossier de crédit d'Enbridge étalé en Excel.
+
+**[Analyse financière](https://github.com/topics/analyse-financiere)**
+
+- [09-valorisation-entreprise](https://github.com/Guilou001/09-valorisation-entreprise) : le cours du Canadien National suppose 11,9 % de croissance annuelle des flux, contre 7,8 % livrés depuis 2011.
+
+**[Assurance](https://github.com/topics/assurance)**
+
+- [17-alm-assurance-vie](https://github.com/Guilou001/17-alm-assurance-vie) : l'appariement par taux clés survit à la torsion de courbe de 2022, la duration seule non.
+
+## Les dépôts, dans l'ordre de lecture
+
 | Dépôt | La question posée | Ce qui est mesuré |
 |---|---|---|
 | [01-frontiere-efficiente](https://github.com/Guilou001/01-frontiere-efficiente) | À quelle distance 50 000 portefeuilles aléatoires restent-ils de la frontière de Markowitz exacte, et le portefeuille tangent tient-il hors échantillon contre 1/N ? | Meilleur Sharpe simulé 0,73 contre 0,80 pour la tangence exacte ; hors échantillon net de coûts, le tangent bat 1/N aux États-Unis (0,77 contre 0,51) et perd au Canada (0,62 contre 0,73) |
@@ -27,10 +74,12 @@ reading order, from foundations to capstone.*
 | [12-plan-epargne](https://github.com/Guilou001/12-plan-epargne) | REER ou CELI d'abord, et que devient la promesse d'un plan de retraite quand on simule les rendements au lieu de les supposer constants ? | L'équivalence REER = CELI à taux égaux est prouvée par test analytique (1e-12) ; au cas type 35/25, REER d'abord gagne 8,0 % de richesse nette, mais le remboursement dépensé inverse le classement (-18,9 %) ; la promesse déterministe (95 862 $) cache un cinquième percentile à 45 855 $ ; au scénario prudent, un avenir sur dix ne finance pas la cible |
 | [13-couverture-de-change](https://github.com/Guilou001/13-couverture-de-change) | Couvrir le dollar US est vendu comme de la prudence pure : est-ce vrai pour un investisseur canadien en actions américaines ? | Non, mesuré : la parité couverte des taux reconstruit XSP à 93 pb/an près (corr 0,995), et la couverture AUGMENTE le risque (vol 15,2 % contre 12,2 %, pire baisse -52 % contre -42 %), car le USD monte quand les actions tombent (corr -0,59) ; le ratio optimal vaut zéro |
 | [14-attribution-performance](https://github.com/Guilou001/14-attribution-performance) | Quatre méthodes de chaînage d'attribution concurrentes : le verdict au comité dépend-il de la méthode choisie ? | Non : Cariño, Menchero, GRAP et Frongello réconcilient chacun exactement (résidu 5e-15, testé) et s'accordent à 0,83 point près sur 58,7 ; les totaux GRAP et Frongello sont identiques (identité redémontrée et testée) ; TWR, Dietz et MWR retombent au centième sur l'exemple officiel du GIPS Handbook 2020 |
-| [17-alm-assurance-vie](https://github.com/Guilou001/17-alm-assurance-vie) | L'immunisation par la durée a-t-elle survécu à la torsion de courbe de 2022, et le capital TSAV prescrit couvrait-il la perte ? | L'appariement par taux clés ramène le surplus à son point de départ à travers 400 pb de torsion ; la duration seule erre ; sans couverture, insolvabilité transitoire ; et l'exigence du chapitre 5 (chocs en racine carrée des taux plancher de 2021 : +147 pb prescrits, 400 livrés) n'a couvert que 67 % de la perte réalisée |
 | [15-valorisation-options](https://github.com/Guilou001/15-valorisation-options) | Construire un pricer d'options, puis PROUVER qu'il est juste : que valent les vingt prix du tableau 1 de Longstaff-Schwartz face à un arbre poussé à convergence ? | Réplication 20/20 dans les deux erreurs types (puts bermudéens, transcription verrouillée par tests), convergence CRR mesurée à la pente -0,98, couverture des IC vérifiée (94-96 %), et le surapprentissage du LSM chiffré en multi-graines : +0,2 à +0,5 cent, invisible à graine unique |
 | [16-options-couvertes](https://github.com/Guilou001/16-options-couvertes) | Le « revenu » des FNB d'options d'achat couvertes est-il gratuit, et la donnée libre suffit-elle à répliquer le BXM ? | Non et non, mesuré : le BXM reconstruit au VIX (corr 0,981) ressort trop riche de +527 pb/an, la mesure du skew que le VIX ne voit pas ; la prime de variance est positive 84 % des mois depuis 1990 (t 3,3) ; et ZEB bat ZWB de 2,75 pt/an sur les mêmes banques pour un pire creux identique |
+| [17-alm-assurance-vie](https://github.com/Guilou001/17-alm-assurance-vie) | L'immunisation par la durée a-t-elle survécu à la torsion de courbe de 2022, et le capital TSAV prescrit couvrait-il la perte ? | L'appariement par taux clés ramène le surplus à son point de départ à travers 400 pb de torsion ; la duration seule erre ; sans couverture, insolvabilité transitoire ; et l'exigence du chapitre 5 (chocs en racine carrée des taux plancher de 2021 : +147 pb prescrits, 400 livrés) n'a couvert que 67 % de la perte réalisée |
 | [18-inflation-fondamentale](https://github.com/Guilou001/18-inflation-fondamentale) | Les mesures d'inflation fondamentale choisies en 2016 gagnent-elles encore leur concours à travers le choc de 2021-23 ? | Oui pour l'IPC-tronq (premier au critère prédictif dans les deux fenêtres) ; l'IPC-comm, déclassé par la Banque en 2022, finit dernier : c'était dans les données ; et IPC-tronq/IPC-méd sont reconstruits depuis les 55 composantes officielles à 0,22-0,24 pt près, l'écart maximal tombant sur la TPS de 1991, la signature de l'approximation déclarée |
+| [uqam-transformer-actions](https://github.com/Guilou001/uqam-transformer-actions) | Un Transformer à douze têtes, nourri de vingt-six ans de prix quotidiens de la Banque Royale, apprend-il à prédire le rendement de demain ? | Non : l'écart type de la prédiction vaut 0,0015 % de celui du rendement réalisé et la corrélation −0,04 ; après lissage sur dix jours, 59,5 % et 0,79. Le portage sur Keras 3 a révélé un modèle à 8 833 paramètres au lieu de 306 175, défaut invisible en 2022 |
+| [uqam-cycle-economique-canada](https://github.com/Guilou001/uqam-cycle-economique-canada) | Les faits stylisés du cycle canadien, mesurés en 2021 sur un fichier de cours, tiennent-ils une fois reconstruits sur les tables ouvertes de Statistique Canada et prolongés à 2026 ? | La validation croisée du portage passe (inflation 1973-1982 à 9,62 contre 9,63) ; la grande modération tient sur 1984-2017 et NE TIENT PLUS jusqu'en 2026, quatre trimestres de 2020 la renversant |
 | [skill-redaction-pedagogique](https://github.com/Guilou001/skill-redaction-pedagogique) | Un skill Claude Code : écrire des documents techniques en français clair sans perdre la rigueur | Utilisé pour les README de tous les dépôts ci-dessus |
 
 ## Par où commencer, en trois arrêts
