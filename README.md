@@ -22,6 +22,7 @@ reading order, from foundations to capstone.*
 | [07-nowcast-canada](https://github.com/Guilou001/07-nowcast-canada) | Pour prévoir le trimestre en cours du PIB canadien avec l'information réellement disponible, qui gagne : l'autorégression, le PIB mensuel, les 400 séries de la LCDMA ou l'apprentissage machine ? | Le bridge du PIB mensuel réduit l'erreur de 57 % contre l'AR au mois 3 (p = 0,027, hors COVID) ; le grand panel fait pire que l'AR au même mois, le bloc américain de FRED-MD dégrade le mois 1 |
 | [08-factor-lab-ca](https://github.com/Guilou001/08-factor-lab-ca) | Les primes de facteurs canadiennes (valeur, momentum, bêta faible, qualité) ont-elles fondu après leur publication, comme aux États-Unis, et le Canada se distingue-t-il ? | Pas de décote après 2001 : momentum stable à 15,7 %/an (t = 3,3), valeur qui monte, et le Canada bat les États-Unis sur les quatre primes vivantes à période commune (corrélations bilatérales 0,37 à 0,82) |
 | [09-valuation-lab-ca](https://github.com/Guilou001/09-valuation-lab-ca) | Que vaut le Canadien National, et surtout : quelle croissance le cours de 175 $ suppose-t-il, est-elle plausible au vu de quinze ans d'états financiers ? | DCF prudent 93 $, comparables 200-225 $ (le CN le moins cher de sa cohorte), et DCF inversé : le cours suppose 11,9 %/an de FCFF pendant 5 ans contre 7,8 % livré sur 2011-2025 et 4,0 % sur la dernière décennie ; classeur Excel à formules vivantes et mémo bilingue |
+| [10-credit-lab-ca](https://github.com/Guilou001/10-credit-lab-ca) | Comment prouver qu'un moteur de probabilité de défaut mesure ce qu'il prétend, et que vaut le dossier de crédit d'Enbridge une fois les ratios étalés ? | Le hasard de Shumway retrouve les paramètres d'un portefeuille synthétique à vérité connue (−6,13 contre −6,20 vrai) ; l'ECL pondérée par scénarios dépasse la centrale de 0,6 % (convexité mesurée) ; capital IRB OSFI testé à la main ; dossier Excel Enbridge : la grille de ratios donne B, les agences BBB, et l'écart est l'enseignement |
 | [skill-redaction-pedagogique](https://github.com/Guilou001/skill-redaction-pedagogique) | Un skill Claude Code : écrire des documents techniques en français clair sans perdre la rigueur | Utilisé pour les README de tous les dépôts ci-dessus |
 
 ## Par où commencer, en trois arrêts
@@ -46,11 +47,11 @@ reading order, from foundations to capstone.*
 | Macroéconomie appliquée (nowcasting, temps réel) | 07-nowcast-canada |
 | Recherche facteurs et valorisation d'actifs | 08-factor-lab-ca, 02-estimation-error-lab |
 | Analyse fondamentale et valorisation d'entreprise (DCF, comparables, Excel) | 09-valuation-lab-ca |
+| Risque de crédit et banque commerciale (PD, IFRS 9, IRB, dossier de crédit) | 10-credit-lab-ca |
 | Rédaction technique bilingue, chiffres sourcés | tous, plus skill-redaction-pedagogique |
 
-En cours, dans l'ordre : `10-credit-lab-ca` (dossier de crédit et pertes attendues),
-`11-yield-curve-ca` (courbe des taux et ALM), `12-plan-epargne-ca` (projection REER/CELI par
-simulation).
+En cours, dans l'ordre : `11-yield-curve-ca` (courbe des taux et ALM), `12-plan-epargne-ca`
+(projection REER/CELI par simulation).
 
 Outils : Python 3.12 (uv, pandas, scikit-learn, cvxpy, matplotlib), SQL, Excel, LaTeX et Typst.
 Données libres seulement : Yahoo Finance (usage personnel), FRED, Banque du Canada (Valet), Ken French,
