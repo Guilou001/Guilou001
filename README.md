@@ -24,6 +24,7 @@ reading order, from foundations to capstone.*
 | [09-valuation-lab-ca](https://github.com/Guilou001/09-valuation-lab-ca) | Que vaut le Canadien National, et surtout : quelle croissance le cours de 175 $ suppose-t-il, est-elle plausible au vu de quinze ans d'états financiers ? | DCF prudent 93 $, comparables 200-225 $ (le CN le moins cher de sa cohorte), et DCF inversé : le cours suppose 11,9 %/an de FCFF pendant 5 ans contre 7,8 % livré sur 2011-2025 et 4,0 % sur la dernière décennie ; classeur Excel à formules vivantes et mémo bilingue |
 | [10-credit-lab-ca](https://github.com/Guilou001/10-credit-lab-ca) | Comment prouver qu'un moteur de probabilité de défaut mesure ce qu'il prétend, et que vaut le dossier de crédit d'Enbridge une fois les ratios étalés ? | Le hasard de Shumway retrouve les paramètres d'un portefeuille synthétique à vérité connue (−6,13 contre −6,20 vrai) ; l'ECL pondérée par scénarios dépasse la centrale de 0,6 % (convexité mesurée) ; capital IRB OSFI testé à la main ; dossier Excel Enbridge : la grille de ratios donne B, les agences BBB, et l'écart est l'enseignement |
 | [11-yield-curve-ca](https://github.com/Guilou001/11-yield-curve-ca) | Diebold-Li bat-il encore la marche aléatoire, et la pente de la courbe prédit-elle encore les récessions canadiennes après l'inversion de 2022-23 sans récession ? | Non et non : la marche aléatoire gagne 26 cases sur 27 (1996-2026) ; hors échantillon l'AUROC de la pente tombe à 0,50 (0,27 hors COVID), fausse alarme de 2022-24 comprise ; en ALM, le choc réalisé de 2022 (+412 pb à 3 mois) coûte moitié moins que la pentification réglementaire : la forme du choc compte autant que l'ampleur |
+| [12-plan-epargne-ca](https://github.com/Guilou001/12-plan-epargne-ca) | REER ou CELI d'abord, et que devient la promesse d'un plan de retraite quand on simule les rendements au lieu de les supposer constants ? | L'équivalence REER = CELI à taux égaux est prouvée par test analytique (1e-12) ; au cas type 35/25, REER d'abord gagne 8,0 % de richesse nette, mais le remboursement dépensé inverse le classement (-18,9 %) ; la promesse déterministe (95 862 $) cache un cinquième percentile à 45 855 $ ; au scénario prudent, un avenir sur dix ne finance pas la cible |
 | [skill-redaction-pedagogique](https://github.com/Guilou001/skill-redaction-pedagogique) | Un skill Claude Code : écrire des documents techniques en français clair sans perdre la rigueur | Utilisé pour les README de tous les dépôts ci-dessus |
 
 ## Par où commencer, en trois arrêts
@@ -50,9 +51,10 @@ reading order, from foundations to capstone.*
 | Analyse fondamentale et valorisation d'entreprise (DCF, comparables, Excel) | 09-valuation-lab-ca |
 | Risque de crédit et banque commerciale (PD, IFRS 9, IRB, dossier de crédit) | 10-credit-lab-ca |
 | Courbe des taux et ALM bancaire (Nelson-Siegel, probit, IRRBB, durations clés) | 11-yield-curve-ca |
+| Planification d'épargne et Monte Carlo client (REER/CELI, risque de séquence) | 12-plan-epargne-ca |
 | Rédaction technique bilingue, chiffres sourcés | tous, plus skill-redaction-pedagogique |
 
-En cours : `12-plan-epargne-ca` (Monte Carlo REER/CELI), puis huit projets vérifiés en réserve (couverture de change, attribution de performance, ALM assurance LICAT, entre autres)
+La séquence 01-12 est complète. En réserve, huit projets vérifiés source par source : couverture de change, options d'achat couvertes, attribution de performance, pricing d'options, ALM assurance LICAT, inflation fondamentale, immobilier Teranet, entrepôt point-in-time SEC
 (projection REER/CELI par simulation).
 
 Outils : Python 3.12 (uv, pandas, scikit-learn, cvxpy, matplotlib), SQL, Excel, LaTeX et Typst.
