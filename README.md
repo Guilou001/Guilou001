@@ -48,9 +48,9 @@ reading order, from foundations to capstone.*
 | Analyse fondamentale et valorisation d'entreprise (DCF, comparables, Excel) | 09-valuation-lab-ca |
 | Rédaction technique bilingue, chiffres sourcés | tous, plus skill-redaction-pedagogique |
 
-En cours, dans l'ordre : `09-valuation-lab-ca` (analyse
-fondamentale et DCF d'une société du TSX), `10-credit-lab-ca`, `11-yield-curve-ca`,
-`12-plan-epargne-ca` (projection REER/CELI par simulation).
+En cours, dans l'ordre : `10-credit-lab-ca` (dossier de crédit et pertes attendues),
+`11-yield-curve-ca` (courbe des taux et ALM), `12-plan-epargne-ca` (projection REER/CELI par
+simulation).
 
 Outils : Python 3.12 (uv, pandas, scikit-learn, cvxpy, matplotlib), SQL, Excel, LaTeX et Typst.
 Données libres seulement : Yahoo Finance (usage personnel), FRED, Banque du Canada (Valet), Ken French,
