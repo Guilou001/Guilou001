@@ -19,6 +19,7 @@ reading order, from foundations to capstone.*
 | [04-memoire-uqam-2024](https://github.com/Guilou001/04-memoire-uqam-2024) | Mon mémoire (8 modèles d'apprentissage machine, macro LCDMA et FRED-MD, 50 titres TSX et 50 titres S&P 500, 2008-2024) se réexécute-t-il, et que valent ses portefeuilles long short une fois le short réellement soustrait ? | Réexécution exacte (écart 2,8 × 10⁻⁷) ; long short réel : au mieux 7,4 % par an aux États-Unis, 5,6 % au Canada, sous l'équipondéré ; v1.1 avec PDF des résultats refaits |
 | [05-memoire-2.0](https://github.com/Guilou001/05-memoire-2.0) | La même question, refaite avec les méthodes de 2026 : information réellement disponible, réglages gelés hors test, validation croisée purgée, coûts, Sharpe déflaté | Aucun des huit modèles ne bat l'équipondéré ; la rotation de 2 à 3 par mois coûte plus que le signal extrait ; Sharpe déflaté maximal 0,01 une fois les 33 essais comptés, loin du seuil de 0,95 |
 | [06-risk-engine-ca](https://github.com/Guilou001/06-risk-engine-ca) | Parmi six modèles de VaR à un jour (historique, gaussien, Student, EWMA, simulation historique filtrée, GARCH maison), lesquels survivent aux backtests réglementaires sur 22 ans de données canadiennes ? | Seule la simulation historique filtrée passe Kupiec (69 dépassements pour 54,8 attendus, p = 0,063) et n'a aucune année rouge de Bâle ; l'historique dépasse 22 fois dans la seule année 2008 |
+| [07-nowcast-canada](https://github.com/Guilou001/07-nowcast-canada) | Pour prévoir le trimestre en cours du PIB canadien avec l'information réellement disponible, qui gagne : l'autorégression, le PIB mensuel, les 400 séries de la LCDMA ou l'apprentissage machine ? | Le bridge du PIB mensuel réduit l'erreur de 57 % contre l'AR au mois 3 (p = 0,027, hors COVID) ; le grand panel fait pire que l'AR au même mois, le bloc américain de FRED-MD dégrade le mois 1 |
 | [skill-redaction-pedagogique](https://github.com/Guilou001/skill-redaction-pedagogique) | Un skill Claude Code : écrire des documents techniques en français clair sans perdre la rigueur | Utilisé pour les README de tous les dépôts ci-dessus |
 
 ## Par où commencer, en trois arrêts
@@ -40,9 +41,10 @@ reading order, from foundations to capstone.*
 | Apprentissage machine appliqué aux rendements | 04-memoire-uqam-2024, 05-memoire-2.0 |
 | Backtests propres (walk-forward, coûts, validation purgée) | 05-memoire-2.0, 03-portfolio-ops-ca, 02-estimation-error-lab, 01-efficient-frontier-mpt |
 | Gestion des risques (VaR, ES, backtests réglementaires) | 06-risk-engine-ca |
+| Macroéconomie appliquée (nowcasting, temps réel) | 07-nowcast-canada |
 | Rédaction technique bilingue, chiffres sourcés | tous, plus skill-redaction-pedagogique |
 
-En cours, dans l'ordre : `07-nowcast-canada`, `08-factor-lab-ca`, `09-valuation-lab-ca` (analyse
+En cours, dans l'ordre : `08-factor-lab-ca`, `09-valuation-lab-ca` (analyse
 fondamentale et DCF d'une société du TSX), `10-credit-lab-ca`, `11-yield-curve-ca`,
 `12-plan-epargne-ca` (projection REER/CELI par simulation).
 
