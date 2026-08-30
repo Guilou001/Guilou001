@@ -4,11 +4,14 @@
 empirique sur données libres, je mesure ce qui survit hors échantillon, et je documente aussi ce qui ne
 survit pas. Chaque dépôt contient le code, les données téléchargeables par script, les tests, une CI, et un
 compte rendu dont chaque chiffre porte son statut (mesuré, rapporté, modélisé) et vient d'un fichier de
-résultats du dépôt. Les numéros des dépôts donnent l'ordre de lecture, des fondations vers le capstone.
+résultats du dépôt. Chacun porte aussi ce compte rendu en PDF, dans `rapport/rapport.pdf`, engendré
+depuis le même texte pour qu'il ne puisse pas en diverger. Les numéros des dépôts donnent l'ordre de
+lecture, des fondations vers le capstone.
 
 *Financial economist (MSc, UQAM 2024), Montréal. I replicate empirical-finance papers on open data, measure
 what survives out of sample, and document what does not. Every repository ships code, scripted data
-downloads, tests, CI, and a report where each number carries its provenance. Repository numbers give the
+downloads, tests, CI, and a report where each number carries its provenance, in Markdown and as a
+typeset PDF generated from that same text. Repository numbers give the
 reading order, from foundations to capstone.*
 
 ## Par métier
@@ -88,6 +91,7 @@ Sept familles se partagent les vingt dépôts, une étiquette cliquable par dép
 | [uqam-prevision-facteurs](https://github.com/Guilou001/uqam-prevision-facteurs) | Six modèles prévoient la variation mensuelle du chômage américain sur douze horizons, chacun réestimé 732 fois hors échantillon : lequel gagne, et faut-il retirer la Covid des données pour prévoir la suite ? | La réplication retrouve le travail de 2021 : l'autorégressif direct d'ordre 4 donne 0,841 contre 0,840, et le VAR reste le meilleur des six, 0,798 contre 0,822 du repère ; la question laissée ouverte en 2021 est tranchée par le chômage réalisé, retirer la Covid était le bon choix pour les trois modèles rejoués, et l'ARMA divise son erreur par deux |
 | [uqam-svar-monetaire-budgetaire](https://github.com/Guilou001/uqam-svar-monetaire-budgetaire) | Que fait un choc de taux à l'économie américaine, la réponse est-elle la même qu'avant 1983, et l'effet d'un choc de dépense publique tient-il à autre chose qu'à l'ordre choisi pour l'identifier ? | Le schéma de Christiano, Eichenbaum et Evans se retrouve sur 1965-2020, énigme des prix comprise ; avant 1983 le choc creuse la production de 0,85 % en onze mois, de 1983 à 2007 elle ne passe jamais sous son niveau de départ ; côté budgétaire l'ordre de récursivité décide du signe à l'impact, de +0,11 % à zéro par construction |
 | [uqam-croissance-capital-humain](https://github.com/Guilou001/uqam-croissance-capital-humain) | Un travail de macroéconomie entièrement théorique, sans une ligne de code : sa calibration tient-elle quand on la refait par le calcul, et son état stationnaire existe-t-il vraiment ? | Les quatre paramètres déduits à la main se retrouvent, deux à la précision machine et deux à l'arrondi imprimé ; l'état stationnaire, que le travail ne calculait pas, annule les cinq conditions d'équilibre à 2 × 10⁻¹⁶ près, et le schéma d'identification proposé en conclusion retrouve des chocs connus à 0,999 |
+| [gv-fintools](https://github.com/Guilou001/gv-fintools) | Comment donner un rapport PDF à vingt-quatre dépôts sans écrire vingt-quatre rapports ? | Le README d'un dépôt est traduit en Typst et composé : les 24 rapports du portefeuille, de 4 à 16 pages, viennent de là ; 13 tests fermés, dont un qui compile un document complet et relit le PDF produit |
 | [skill-redaction-pedagogique](https://github.com/Guilou001/skill-redaction-pedagogique) | Un skill Claude Code : écrire des documents techniques en français clair sans perdre la rigueur | Utilisé pour les README de tous les dépôts ci-dessus |
 
 ## Par où commencer, en trois arrêts
