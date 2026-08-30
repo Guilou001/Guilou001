@@ -56,14 +56,17 @@ Sept familles se partagent les vingt dépôts, une étiquette cliquable par dép
 **[Crédit](https://github.com/topics/credit)**
 
 - [10-credit-bancaire](https://github.com/Guilou001/10-credit-bancaire) : un moteur de probabilité de défaut prouvé sur un portefeuille à vérité connue, et le dossier de crédit d'Enbridge étalé en Excel.
+- [27-portefeuille-de-credit](https://github.com/Guilou001/27-portefeuille-de-credit) : la règle de capital du BSIF suppose une infinité de prêts, et manque 36 % du capital sur un livre où dix clients font la moitié du montant.
 
 **[Analyse financière](https://github.com/topics/analyse-financiere)**
 
 - [09-valorisation-entreprise](https://github.com/Guilou001/09-valorisation-entreprise) : le cours du Canadien National suppose 11,9 % de croissance annuelle des flux, contre 7,8 % livrés depuis 2011.
+- [28-etats-financiers-reformules](https://github.com/Guilou001/28-etats-financiers-reformules) : sur 39 industries canadiennes, aucune ne tire de l'emprunt plus que de son affaire ; l'exploitation rapporte 11,5 % par an, l'emprunt moins d'un point.
 
 **[Assurance](https://github.com/topics/assurance)**
 
 - [17-alm-assurance-vie](https://github.com/Guilou001/17-alm-assurance-vie) : l'appariement par taux clés survit à la torsion de courbe de 2022, la duration seule non.
+- [26-provisionnement-iard](https://github.com/Guilou001/26-provisionnement-iard) : la fourchette de provisionnement qui promet 95 % n'en tient que 59 à 74, sur 207 assureurs et deux millésimes de triangles.
 
 ## Les dépôts, dans l'ordre de lecture
 
@@ -89,6 +92,9 @@ Sept familles se partagent les vingt dépôts, une étiquette cliquable par dép
 | [18-inflation-fondamentale](https://github.com/Guilou001/18-inflation-fondamentale) | Les mesures d'inflation fondamentale choisies en 2016 gagnent-elles encore leur concours à travers le choc de 2021-23 ? | Oui pour l'IPC-tronq (premier au critère prédictif dans les deux fenêtres) ; l'IPC-comm, déclassé par la Banque en 2022, finit dernier : c'était dans les données ; et IPC-tronq/IPC-méd sont reconstruits depuis les 55 composantes officielles à 0,22-0,24 pt près, l'écart maximal tombant sur la TPS de 1991, la signature de l'approximation déclarée |
 | [23-fnb-levier-quotidien](https://github.com/Guilou001/23-fnb-levier-quotidien) | Un fonds qui rend trois fois le rendement quotidien de son indice rend-il, au bout de quinze ans, trois fois le rendement de l'indice ? | Non, et l'écart change de signe avec la tendance : sur le Nasdaq 100 depuis 2010, composer trois fois chaque jour donne +51 108 % contre +4 673 % au multiple naïf, quand la même mécanique coûte 42 points sur Toronto ; la formule fermée rejoint vingt mille tirages à 0,16 point, les quatre fonds inverses finissent à −100 %, et onze séances de 2008 suffisaient à faire tomber la corrélation des fonds canadiens de 0,99 à 0,24 |
 | [25-scenario-climatique-bsif](https://github.com/Guilou001/25-scenario-climatique-bsif) | Le module de crédit de l'exercice normalisé de scénarios climatiques du BSIF se code-t-il depuis ses seules formules publiées, et qui la majoration prescrite frappe-t-elle ? | Les huit nombres de l'exemple officiel retrouvés à 1,2 × 10⁻¹⁰ dollar près ; la majoration s'ajoutant au logit multiplie la COTE de défaut, si bien qu'à vingt ans elle coûte 9,31 % de perte attendue au meilleur seau de qualité contre 1,58 % au pire, soit 5,9 fois moins |
+| [26-provisionnement-iard](https://github.com/Guilou001/26-provisionnement-iard) | La fourchette de provisionnement de Mack, qui promet de contenir la vraie facture 95 fois sur 100, la contient-elle vraiment ? | Les 38 chiffres de l'article de 1993 retrouvés, puis une couverture de 58,9 % sur les accidents de 1988-1997 et de 74,1 % sur ceux de 1998-2007, sur 207 assureurs ; le montant prévu est bon, l'incertitude annoncée ne l'est pas |
+| [27-portefeuille-de-credit](https://github.com/Guilou001/27-portefeuille-de-credit) | De combien la règle de capital du BSIF, qui suppose un portefeuille infiniment granulaire, se trompe-t-elle sur un vrai livre de banque commerciale ? | 143 des 144 poids publiés retrouvés, la 144e étant une coquille du BSIF contre la table de Bâle ; sur 500 prêts dont dix font la moitié, la règle manque 36 % du capital, et l'ajustement de granularité en rattrape 88 % |
+| [28-etats-financiers-reformules](https://github.com/Guilou001/28-etats-financiers-reformules) | La rentabilité des entreprises canadiennes vient-elle de leur affaire ou de leur endettement ? | L'affaire rapporte 11,5 % par an en médiane, l'emprunt entre +0,18 et -0,98 point selon le traitement des soldes intragroupe ; sur 39 industries, aucune ne tire de l'emprunt plus que de son affaire |
 | [uqam-transformer-actions](https://github.com/Guilou001/uqam-transformer-actions) | Un Transformer à douze têtes, nourri de vingt-six ans de prix quotidiens de la Banque Royale, apprend-il à prédire le rendement de demain ? | Non : l'écart type de la prédiction vaut 0,0015 % de celui du rendement réalisé et la corrélation −0,04 ; après lissage sur dix jours, 59,5 % et 0,79. Le portage sur Keras 3 a révélé un modèle à 8 833 paramètres au lieu de 306 175, défaut invisible en 2022 |
 | [uqam-cycle-economique-canada](https://github.com/Guilou001/uqam-cycle-economique-canada) | Les faits stylisés du cycle canadien, mesurés en 2021 sur un fichier de cours, tiennent-ils une fois reconstruits sur les tables ouvertes de Statistique Canada et prolongés à 2026 ? | La validation croisée du portage passe (inflation 1973-1982 à 9,62 contre 9,63) ; la grande modération tient sur 1984-2017 et NE TIENT PLUS jusqu'en 2026, quatre trimestres de 2020 la renversant |
 | [uqam-apprentissage-sept-bases](https://github.com/Guilou001/uqam-apprentissage-sept-bases) | Neuf algorithmes d'apprentissage automatique, du lasso au réseau de neurones, sont comparés sur sept bases de données sans rapport les unes avec les autres : lequel gagne, et le classement dépend-il de la base ? | Aucun ne gagne partout, cinq estimateurs se partageant les sept premières places et un modèle non paramétrique l'emportant sur six bases ; la réplication retrouve les nombres de 2022 sur les cinq bases publiques (lasso et ridge à 0,24 sur Boston Housing, cinq des sept pénalités identiques), tandis que les deux bases macroéconomiques, reconstruites depuis FRED-MD faute des fichiers du cours, donnent un chômage que rien ne prédit mieux que sa moyenne |
@@ -117,6 +123,9 @@ Sept familles se partagent les vingt dépôts, une étiquette cliquable par dép
 | Apprentissage machine appliqué aux rendements | 04-memoire-uqam-2024, 05-memoire-2.0 |
 | Backtests propres (walk-forward, coûts, validation purgée) | 05-memoire-2.0, 03-gestion-portefeuille, 02-erreur-estimation, 01-frontiere-efficiente |
 | Gestion des risques (VaR, ES, backtests réglementaires) | 06-risque-marche |
+| Actuariat de dommages (triangles, provisionnement, Mack) | 26-provisionnement-iard |
+| Capital réglementaire de crédit et risque de concentration | 27-portefeuille-de-credit, 10-credit-bancaire |
+| Analyse d'états financiers et décomposition de la rentabilité | 28-etats-financiers-reformules, 09-valorisation-entreprise |
 | Tension réglementaire et risque climatique (exercice normalisé du BSIF, IFRS 9, Frye-Jacobs) | 25-scenario-climatique-bsif |
 | Macroéconomie appliquée (nowcasting, temps réel) | 07-nowcast-pib-canada |
 | Recherche facteurs et valorisation d'actifs | 08-facteurs-canada, 02-erreur-estimation |
