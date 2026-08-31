@@ -16,7 +16,7 @@ reading order, from foundations to capstone.*
 
 ## Par métier
 
-Sept familles se partagent les trente et un dépôts, une étiquette cliquable par dépôt, celle du poste qu'il vise.
+Sept familles se partagent les trente-trois dépôts, une étiquette cliquable par dépôt, celle du poste qu'il vise.
 
 **[Gestion de portefeuille](https://github.com/topics/gestion-de-portefeuille)**
 
@@ -53,6 +53,7 @@ Sept familles se partagent les trente et un dépôts, une étiquette cliquable p
 - [06-risque-marche](https://github.com/Guilou001/06-risque-marche) : sur six modèles de valeur à risque, seule la simulation historique filtrée passe Kupiec et n'a aucune année rouge de Bâle.
 - [25-scenario-climatique-bsif](https://github.com/Guilou001/25-scenario-climatique-bsif) : l'exercice climatique que le BSIF impose aux banques, recalculé à un milliardième de dollar près, et une majoration qui frappe les bons emprunteurs 5,9 fois plus que les mauvais.
 - [30-risque-operationnel](https://github.com/Guilou001/30-risque-operationnel) : le capital contre les ratés d'une banque, refait depuis ses relevés publics ; quatre des six grandes en portent moins que le barème n'exige, et la Toronto-Dominion seule davantage.
+- [32-xva-swaps](https://github.com/Guilou001/32-xva-swaps) : trois portefeuilles de swaps de même nominal, dont le coût de contrepartie va de moins 400 à plus 280 points de base ; les 42 cellules de l'article de référence reproduites dans trois erreurs types.
 
 **[Crédit](https://github.com/topics/credit)**
 
@@ -69,6 +70,7 @@ Sept familles se partagent les trente et un dépôts, une étiquette cliquable p
 
 - [17-alm-assurance-vie](https://github.com/Guilou001/17-alm-assurance-vie) : l'appariement par taux clés survit à la torsion de courbe de 2022, la duration seule non.
 - [26-provisionnement-iard](https://github.com/Guilou001/26-provisionnement-iard) : la fourchette de provisionnement qui promet 95 % n'en tient que 59 à 74, sur 207 assureurs et deux millésimes de triangles.
+- [31-fonds-distincts](https://github.com/Guilou001/31-fonds-distincts) : dans le nouveau régime de capital des garanties de fonds distincts, le choc de volatilité pèse plus lourd que le choc d'actions, et la grille du régulateur épingle en fait la volatilité à 41 % au court terme et 25 % au long.
 
 ## Les dépôts, dans l'ordre de lecture
 
@@ -99,6 +101,8 @@ Sept familles se partagent les trente et un dépôts, une étiquette cliquable p
 | [28-etats-financiers-reformules](https://github.com/Guilou001/28-etats-financiers-reformules) | La rentabilité des entreprises canadiennes vient-elle de leur affaire ou de leur endettement ? | L'affaire rapporte 11,5 % par an en médiane, l'emprunt entre +0,18 et -0,98 point selon le traitement des soldes intragroupe ; sur 39 industries, aucune ne tire de l'emprunt plus que de son affaire |
 | [29-rentabilite-des-banques](https://github.com/Guilou001/29-rentabilite-des-banques) | D'où vient le rendement des six grandes banques canadiennes, et qu'est-ce qui a changé depuis 1997 ? | Sur 174 exercices, la marge ajoute +5,7 points de rendement et la productivité de l'actif en retire 4,5, le levier 4,1 ; le rendement passe de 15,95 % à 12,98 %, et l'identité se referme à 5,6e-17 |
 | [30-risque-operationnel](https://github.com/Guilou001/30-risque-operationnel) | Que suppose le capital de risque opérationnel d'une banque sur ses propres pertes, alors que ces pertes ne sont pas publiées ? | Le capital se refait depuis les relevés publics, seize banques sur trente-neuf à mieux qu'un millième et la meilleure au dollar près ; quatre des six grandes portent moins que le barème, et l'exemple travaillé du BSIF se révèle faux sur sa dernière ligne |
+| [31-fonds-distincts](https://github.com/Guilou001/31-fonds-distincts) | Dans le nouveau régime de capital des garanties de fonds distincts, lequel des deux chocs simultanés fait le capital ? | Le choc de volatilité exige plus que le choc d'actions à dix ans, 57,6 % de l'exigence conjointe et jusqu'à 64,4 % à douze ans ; les neuf exemples travaillés du BSIF se reproduisent, sauf une addition qui imprime 51,4 là où 54,0 moins 3,6 fait 50,4 |
+| [32-xva-swaps](https://github.com/Guilou001/32-xva-swaps) | Trois portefeuilles de swaps de même nominal total coûtent-ils le même risque de contrepartie ? | Non : de -138,6 à +35,8 points de base à corrélation nulle, le seul calendrier de l'exposition les séparant de 174 points ; les 42 cellules de l'article de référence tiennent dans trois erreurs types, et l'écart résiduel est chiffré convention par convention |
 | [uqam-transformer-actions](https://github.com/Guilou001/uqam-transformer-actions) | Un Transformer à douze têtes, nourri de vingt-six ans de prix quotidiens de la Banque Royale, apprend-il à prédire le rendement de demain ? | Non : l'écart type de la prédiction vaut 0,0015 % de celui du rendement réalisé et la corrélation −0,04 ; après lissage sur dix jours, 59,5 % et 0,79. Le portage sur Keras 3 a révélé un modèle à 8 833 paramètres au lieu de 306 175, défaut invisible en 2022 |
 | [uqam-cycle-economique-canada](https://github.com/Guilou001/uqam-cycle-economique-canada) | Les faits stylisés du cycle canadien, mesurés en 2021 sur un fichier de cours, tiennent-ils une fois reconstruits sur les tables ouvertes de Statistique Canada et prolongés à 2026 ? | La validation croisée du portage passe (inflation 1973-1982 à 9,62 contre 9,63) ; la grande modération tient sur 1984-2017 et NE TIENT PLUS jusqu'en 2026, quatre trimestres de 2020 la renversant |
 | [uqam-apprentissage-sept-bases](https://github.com/Guilou001/uqam-apprentissage-sept-bases) | Neuf algorithmes d'apprentissage automatique, du lasso au réseau de neurones, sont comparés sur sept bases de données sans rapport les unes avec les autres : lequel gagne, et le classement dépend-il de la base ? | Aucun ne gagne partout, cinq estimateurs se partageant les sept premières places et un modèle non paramétrique l'emportant sur six bases ; la réplication retrouve les nombres de 2022 sur les cinq bases publiques (lasso et ridge à 0,24 sur Boston Housing, cinq des sept pénalités identiques), tandis que les deux bases macroéconomiques, reconstruites depuis FRED-MD faute des fichiers du cours, donnent un chômage que rien ne prédit mieux que sa moyenne |
@@ -130,6 +134,8 @@ Sept familles se partagent les trente et un dépôts, une étiquette cliquable p
 | Actuariat de dommages (triangles, provisionnement, Mack) | 26-provisionnement-iard |
 | Capital réglementaire de crédit et risque de concentration | 27-portefeuille-de-credit, 10-credit-bancaire |
 | Capital réglementaire de risque opérationnel et relevés du BSIF | 30-risque-operationnel |
+| Capital d'assurance vie et garanties de fonds distincts | 31-fonds-distincts, 17-alm-assurance-vie |
+| Risque de contrepartie, XVA et modèles de taux à deux facteurs | 32-xva-swaps |
 | Analyse d'états financiers et décomposition de la rentabilité | 28-etats-financiers-reformules, 29-rentabilite-des-banques, 09-valorisation-entreprise |
 | Tension réglementaire et risque climatique (exercice normalisé du BSIF, IFRS 9, Frye-Jacobs) | 25-scenario-climatique-bsif |
 | Macroéconomie appliquée (nowcasting, temps réel) | 07-nowcast-pib-canada |
@@ -146,10 +152,10 @@ Sept familles se partagent les trente et un dépôts, une étiquette cliquable p
 | Inflation et mesures fondamentales (IPC-tronq, concours de mesures) | 18-inflation-fondamentale |
 | Rédaction technique bilingue, chiffres sourcés | tous, plus skill-redaction-pedagogique |
 
-Trente et un dépôts publiés : 01 à 18, 23, et 25 à 30, plus les six travaux de maîtrise `uqam-`. En
+Trente-trois dépôts publiés : 01 à 18, 23, et 25 à 32, plus les six travaux de maîtrise `uqam-`. En
 réserve, vérifiés source par source : le programme intrajournalier issu de la revue VWAP (21, 22 et
-24 : réplication Zarattini-Aziz, dernière demi-heure, VWAP IEX contre consolidé), et le cycle suivant
-des dépôts réglementaires (fonds distincts, ajustements de valeur sur swaps).
+24 : réplication Zarattini-Aziz, dernière demi-heure, VWAP IEX contre consolidé), et six candidats de
+second tour du côté réglementaire.
 
 Outils : Python 3.12 (uv, pandas, scikit-learn, cvxpy, matplotlib), SQL sur DuckDB (les relevés du
 BSIF, 2,2 millions de lignes dans 29 et 30), Excel, LaTeX et Typst.
