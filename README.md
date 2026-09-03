@@ -16,7 +16,7 @@ reading order, from foundations to capstone.*
 
 ## Par métier
 
-Sept familles se partagent les trente-trois dépôts, une étiquette cliquable par dépôt, celle du poste qu'il vise.
+Sept familles se partagent les trente-sept dépôts, une étiquette cliquable par dépôt, celle du poste qu'il vise.
 
 **[Gestion de portefeuille](https://github.com/topics/gestion-de-portefeuille)**
 
@@ -38,6 +38,7 @@ Sept familles se partagent les trente-trois dépôts, une étiquette cliquable p
 - [21-vwap-intrajournalier](https://github.com/Guilou001/21-vwap-intrajournalier) : la stratégie qui transforme 25 000 dollars en 2 millions en perd si l'on paie un demi-cent d'écart à chacun de ses seize passages quotidiens.
 - [22-derniere-demi-heure](https://github.com/Guilou001/22-derniere-demi-heure) : le momentum intrajournalier publié en 2018 a changé de signe, et c'est l'écart d'ouverture qui le portait, pas la première demi-heure de bourse.
 - [24-vwap-iex-vs-consolide](https://github.com/Guilou001/24-vwap-iex-vs-consolide) : le flux de données gratuit est presque toujours là et ne voit presque rien ; il fait tenir des positions opposées une minute sur vingt-neuf.
+- [quant-research-platform](https://github.com/Guilou001/quant-research-platform) : un laboratoire de recherche quantitative complet, quatorze études et 809 essais comptés ; aucune stratégie ne mérite du capital, et la publication laisse un quart à un tiers du rendement de l'article.
 - [uqam-transformer-actions](https://github.com/Guilou001/uqam-transformer-actions) : un Transformer à douze têtes qui ne prédit qu'une ligne plate sur les rendements quotidiens.
 
 **[Économie](https://github.com/topics/economie)**
@@ -115,11 +116,15 @@ Sept familles se partagent les trente-trois dépôts, une étiquette cliquable p
 | [uqam-prevision-facteurs](https://github.com/Guilou001/uqam-prevision-facteurs) | Six modèles prévoient la variation mensuelle du chômage américain sur douze horizons, chacun réestimé 732 fois hors échantillon : lequel gagne, et faut-il retirer la Covid des données pour prévoir la suite ? | La réplication retrouve le travail de 2021 : l'autorégressif direct d'ordre 4 donne 0,841 contre 0,840, et le VAR reste le meilleur des six, 0,798 contre 0,822 du repère ; la question laissée ouverte en 2021 est tranchée par le chômage réalisé, retirer la Covid était le bon choix pour les trois modèles rejoués, et l'ARMA divise son erreur par deux |
 | [uqam-svar-monetaire-budgetaire](https://github.com/Guilou001/uqam-svar-monetaire-budgetaire) | Que fait un choc de taux à l'économie américaine, la réponse est-elle la même qu'avant 1983, et l'effet d'un choc de dépense publique tient-il à autre chose qu'à l'ordre choisi pour l'identifier ? | Le schéma de Christiano, Eichenbaum et Evans se retrouve sur 1965-2020, énigme des prix comprise ; avant 1983 le choc creuse la production de 0,85 % en onze mois, de 1983 à 2007 elle ne passe jamais sous son niveau de départ ; côté budgétaire l'ordre de récursivité décide du signe à l'impact, de +0,11 % à zéro par construction |
 | [uqam-croissance-capital-humain](https://github.com/Guilou001/uqam-croissance-capital-humain) | Un travail de macroéconomie entièrement théorique, sans une ligne de code : sa calibration tient-elle quand on la refait par le calcul, et son état stationnaire existe-t-il vraiment ? | Les quatre paramètres déduits à la main se retrouvent, deux à la précision machine et deux à l'arrondi imprimé ; l'état stationnaire, que le travail ne calculait pas, annule les cinq conditions d'équilibre à 2 × 10⁻¹⁶ près, et le schéma d'identification proposé en conclusion retrouve des chocs connus à 0,999 |
+| [quant-research-platform](https://github.com/Guilou001/quant-research-platform) | Cette anomalie semble fonctionner : est-ce de l'alpha robuste, investissable après coûts, ou le maximum de beaucoup d'essais ? Un laboratoire entier pour répondre, huit articles répliqués, un lac à provenance tracée, des fondamentaux point-in-time, un moteur de validation qui compte les essais, et un second moteur écrit par d'autres | Quatorze études, 809 essais, aucune stratégie `ROBUST` ; sept articles sur huit se répliquent dans leur fenêtre et aucun ne survit à la publication, qui laisse 27 à 33 % du rendement contre 42 % chez McLean et Pontiff ; le biais de survie fabrique deux renversements mesurés contre Kenneth French ; LEAN retrouve le moteur du laboratoire à 4e-6 par mois sur 234 mois, et une séance de retard coûte 71 pb/an |
 | [gv-fintools](https://github.com/Guilou001/gv-fintools) | Comment donner des figures, des données et un rapport PDF à trente dépôts sans écrire trente fois le même code ? | Une feuille de style qui écrit les axes en français, sept fabriques de figures qui rendent les nombres qu'elles dessinent, un chargeur des relevés du BSIF qui pose un entrepôt DuckDB, et un traducteur de README en Typst ; 38 tests fermés, dont un qui compile un document complet et relit le PDF produit |
 | [skill-redaction-pedagogique](https://github.com/Guilou001/skill-redaction-pedagogique) | Un skill Claude Code : écrire des documents techniques en français clair sans perdre la rigueur | Utilisé pour les README de tous les dépôts ci-dessus |
 
-## Par où commencer, en trois arrêts
+## Par où commencer, en quatre arrêts
 
+0. **Le laboratoire** : [quant-research-platform](https://github.com/Guilou001/quant-research-platform),
+   quatorze études du même parcours de vingt étapes, un tableau de bord engendré depuis les fichiers, et
+   un verdict que personne n'aime écrire : aucune stratégie ne mérite du capital.
 1. **La réplication la plus dure** : [02-erreur-estimation](https://github.com/Guilou001/02-erreur-estimation),
    312 cellules sur 312 de DeMiguel, Garlappi et Uppal (2009) reproduites à la précision imprimée, puis le
    verdict retesté sur 63 ans.
@@ -132,10 +137,11 @@ Sept familles se partagent les trente-trois dépôts, une étiquette cliquable p
 
 | Compétence | Dépôts |
 |---|---|
-| Réplication quantitative et rigueur hors échantillon | 02-erreur-estimation, 05-memoire-2.0, 01-frontiere-efficiente |
+| Réplication quantitative et rigueur hors échantillon | quant-research-platform, 02-erreur-estimation, 05-memoire-2.0, 01-frontiere-efficiente |
 | Gestion de portefeuille institutionnelle (allocation, attribution, politique) | 03-gestion-portefeuille, 01-frontiere-efficiente |
-| Apprentissage machine appliqué aux rendements | 04-memoire-uqam-2024, 05-memoire-2.0 |
-| Backtests propres (walk-forward, coûts, validation purgée) | 05-memoire-2.0, 03-gestion-portefeuille, 02-erreur-estimation, 01-frontiere-efficiente |
+| Apprentissage machine appliqué aux rendements | quant-research-platform, 04-memoire-uqam-2024, 05-memoire-2.0 |
+| Backtests propres (walk-forward, coûts, validation purgée) | quant-research-platform, 05-memoire-2.0, 03-gestion-portefeuille, 02-erreur-estimation, 01-frontiere-efficiente |
+| Infrastructure de recherche (lac à provenance tracée, point-in-time, second moteur LEAN, tableau de bord engendré) | quant-research-platform |
 | Gestion des risques (VaR, ES, backtests réglementaires) | 06-risque-marche |
 | Actuariat de dommages (triangles, provisionnement, Mack) | 26-provisionnement-iard |
 | Capital réglementaire de crédit et risque de concentration | 27-portefeuille-de-credit, 10-credit-bancaire |
@@ -147,7 +153,7 @@ Sept familles se partagent les trente-trois dépôts, une étiquette cliquable p
 | Analyse d'états financiers et décomposition de la rentabilité | 28-etats-financiers-reformules, 29-rentabilite-des-banques, 09-valorisation-entreprise |
 | Tension réglementaire et risque climatique (exercice normalisé du BSIF, IFRS 9, Frye-Jacobs) | 25-scenario-climatique-bsif |
 | Macroéconomie appliquée (nowcasting, temps réel) | 07-nowcast-pib-canada |
-| Recherche facteurs et valorisation d'actifs | 08-facteurs-canada, 02-erreur-estimation |
+| Recherche facteurs et valorisation d'actifs | quant-research-platform, 08-facteurs-canada, 02-erreur-estimation |
 | Analyse fondamentale et valorisation d'entreprise (DCF, comparables, Excel) | 09-valorisation-entreprise |
 | Risque de crédit et banque commerciale (PD, IFRS 9, IRB, dossier de crédit) | 10-credit-bancaire |
 | Courbe des taux et ALM bancaire (Nelson-Siegel, probit, IRRBB, durations clés) | 11-courbe-des-taux |
@@ -160,12 +166,11 @@ Sept familles se partagent les trente-trois dépôts, une étiquette cliquable p
 | Inflation et mesures fondamentales (IPC-tronq, concours de mesures) | 18-inflation-fondamentale |
 | Rédaction technique bilingue, chiffres sourcés | tous, plus skill-redaction-pedagogique |
 
-Trente-trois dépôts publiés : 01 à 18, 23, et 25 à 32, plus les six travaux de maîtrise `uqam-`. En
-réserve, vérifiés source par source : le programme intrajournalier issu de la revue VWAP (21, 22 et
-24 : réplication Zarattini-Aziz, dernière demi-heure, VWAP IEX contre consolidé), et six candidats de
-second tour du côté réglementaire.
+Trente-sept dépôts publiés : 01 à 18, 21 à 32, les six travaux de maîtrise `uqam-`, et le laboratoire
+`quant-research-platform`. En réserve, vérifiés source par source : six candidats de second tour du
+côté réglementaire.
 
 Outils : Python 3.12 (uv, pandas, scikit-learn, cvxpy, matplotlib), SQL sur DuckDB (les relevés du
-BSIF, 2,2 millions de lignes dans 29 et 30), Excel, LaTeX et Typst.
+BSIF, 2,2 millions de lignes dans 29 et 30), LEAN dans Docker en moteur de contrôle, Excel, LaTeX et Typst.
 Données libres seulement : Yahoo Finance (usage personnel), FRED, Banque du Canada (Valet), Ken French,
 LCDMA. Français d'abord, résumé anglais dans chaque dépôt.
