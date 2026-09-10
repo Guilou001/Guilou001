@@ -32,6 +32,7 @@ Chaque lien mène au code et à une présentation du projet. Les descriptions ci
 | [14 · Expliquer la performance](https://github.com/Guilou001/14-attribution-performance) | Comprendre pourquoi un portefeuille fait mieux ou moins bien que son plan. Séparer le choix des marchés du choix des fonds, puis vérifier que les contributions retrouvent l’écart total au plan. |
 | [16 · Échanger des hausses futures contre un revenu](https://github.com/Guilou001/16-options-couvertes) | Un fonds peut recevoir un revenu en cédant une partie des hausses futures de ses actions. La comparaison de fonds bancaires canadiens montre que ce revenu n’évite pas les fortes pertes. |
 | [23 · Comprendre les fonds à levier quotidien](https://github.com/Guilou001/23-fnb-levier-quotidien) | Un fonds qui multiplie chaque mouvement quotidien ne multiplie pas de la même façon le gain de plusieurs années. Les calculs montrent que l’écart peut aider ou pénaliser le placement. |
+| [36 · Apprendre à répartir un portefeuille](https://github.com/Guilou001/36-apprendre-portefeuille) | Comparer des modèles qui choisissent directement les placements à ceux qui prévoient les rendements. Sur six fonds canadiens, apprendre avec plusieurs frais possibles donne presque les mêmes résultats que supposer leur coût moyen. |
 
 ### Entreprises et crédit
 
@@ -78,6 +79,8 @@ Chaque lien mène au code et à une présentation du projet. Les descriptions ci
 |---|---|
 | [04 · Mon mémoire de maîtrise de 2024](https://github.com/Guilou001/04-memoire-uqam-2024) | Reproduire un travail sur la prévision des rendements d’actions canadiennes et américaines. L’audit révèle notamment que la cible prévue porte sur un mois déjà écoulé. Ce défaut est conservé et documenté. |
 | [05 · Reprendre la question du mémoire](https://github.com/Guilou001/05-memoire-2.0) | Mieux séparer l’apprentissage des tests et déduire les frais de transaction. Les modèles testés restent derrière la répartition égale. Les données révisées et la sélection des actions restent des limites déclarées. |
+| [34 · Tester des modèles plus complexes](https://github.com/Guilou001/34-complexite-utile) | Comparer des modèles simples et complexes pour prévoir le marché américain. Dans le test avec frais et contraintes, les données ne démontrent pas d’avantage du modèle complexe. |
+| [35 · Comprendre le désaccord des modèles](https://github.com/Guilou001/35-desaccord-obligations) | Mesurer ce que révèle le désaccord entre six modèles qui prévoient les rendements obligataires. Il renseigne sur leurs erreurs futures, mais pénaliser ce désaccord dégrade ici le portefeuille après les frais. |
 | [Laboratoire de recherche quantitative](https://github.com/Guilou001/quant-research-platform) | Reproduire des stratégies publiées, les tester sur d’autres périodes et comptabiliser les essais. Le laboratoire examine si leurs gains résistent aux coûts et aux contrôles qui cherchent à écarter un succès dû au hasard. |
 
 ### Travaux universitaires
